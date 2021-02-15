@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <h1 class="container col-4">Basic Calculator</h1>
+    <br>
+    <table class="container col-4 main1">
+        <tr class="col-12">
+            <td>
+                <p id="history"></p>
+            </td>
+        </tr>
+        <tr class="col-12">
+            <td>
+                <p id="input"></p>
+            </td>
+        </tr>
+        <tr class="col-12">
+            <td>
+                <p id="output"></p>
+            </td>
+        </tr>
+    </table>
+    <table class="container col-4 main2">
+        <tr class="col-4">
+            <td colspan="3">
+                <button class="btn btn-primary col-12" id="clear" onclick="clearAll()">CE</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="subtraction" onclick="dis(`-`)">-</button>
+            </td>
+        </tr>
+        <tr class="col-4">
+            <td>
+                <button class="btn btn-light col-12" id="seven" onclick="dis(`7`)">7</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="eight" onclick="dis(`8`)">8</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="nine" onclick="dis(`9`)">9</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="division" onclick="dis(`/`)">/</button>
+            </td>
+        </tr>
+        <tr class="col-4">
+            <td>
+                <button class="btn btn-light col-12" id="four" onclick="dis(`4`)">4</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="five" onclick="dis(`5`)">5</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="six" onclick="dis(`6`)">6</button>
+            </td>
+            <td rowspan="2">
+                <button class="btn btn-light col-12 btnPlus" id="addition" onclick="dis(`+`)">+</button>
+            </td>
+        </tr>
+        <tr class="col-4">
+            <td>
+                <button class="btn btn-light col-12" id="one" onclick="dis(`1`)">1</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="two" onclick="dis(`2`)">2</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="three" onclick="dis(`3`)">3</button>
+            </td>
+        </tr>
+        <tr class="col-4">
+            <td>
+                <button class="btn btn-light col-12" id="zero" onclick="dis(`0`)">0</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="point" onclick="dis(`.`)">.</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="multiplication" onclick="dis(`*`)">*</button>
+            </td>
+            <td>
+                <button class="btn btn-light col-12" id="equals" onclick="solve()">=</button>
+            </td>
+        </tr>
+    </table>
+    <script src="calc.js"></script>
+    <script src="jquery-3.5.1.js"></script>
+</body>
+
+</html>

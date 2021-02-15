@@ -1,0 +1,15 @@
+.main2 {
+    border: 1px solid black;
+}
+.main1 {
+    border: 1px solid black;
+    border-bottom: 0px;
+}
+
+.btnPlus {
+    height: 80px;
+}
+
+h1 {
+    text-align: center;
+}
